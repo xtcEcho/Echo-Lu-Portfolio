@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Echo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"> -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./node_modules/animejs/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+        ScrollReveal();
+    </script>
+</head>
+
+<body>
+    <div id="header-placeholder">
+        <a href='index.html'><h3 class="RobotoCondensed logo" id="logo">ECHO</h3></a>
+        <div class='hamburger'id="icon"></div>
+        <div class='hamburger' id='background'></div>
+    </div>
+    <div id="nav-placeholder" class='RobotoCondensed'>
+        <h1 class='nav-link' data-url="index.html">Home</h1>
+        <h1 class='nav-link' data-url="index.html#projects">Projects</h1>
+        <h1 class='nav-link'>Resume</h1>
+        <h1 class='nav-link'data-url='about-me.html'>About Echo</h1>
+    </div>
+    <main class='container'>
+        <div class="front-page thin-padding child">
+            <h1 class="RobotoCondensed frontpage-h1">Echo generates new ideas, and realizes them.</h1>
+            <h2 class="frontpage-h2">I like to make unique things.</h2>
+            <p class="frontpage-p">Web-based product design</p>
+        </div>
+        <a id="projects">
+        <div class="banner child thin-padding RobotoCondensed project">
+            <div>P</div>
+            <div>R</div>
+            <div>O</div>
+            <div>J</div>
+            <div>E</div>
+            <div>C</div>
+            <div>T</div>
+            <div>S</div>
+        </div>
+
+        <div class="item child project" id="threedweb">
+            <div class='image-container'>
+                <div class="main-image" data-url="bookmark-page-redesign.html"></div>
+            </div>
+            <div class="RobotoCondensed fp-detail">
+                <p class='name'>THREE-D BOOKMARK PAGE DESIGN</p>
+                <p class='category'>Web design and development</p>
+            </div>
+              
+        </div>
+
+        <div class='item child project' id="selfie">
+            <div class="image-container">
+                <div class="main-image" data-url="remote-selfie.html"></div>
+            </div>
+            <div class="RobotoCondensed fp-detail">
+                <p class='name'>REMOTE GROUP SELFIE MACHINE</p>
+                <p class='category'>Web design and development</p>
+            </div>
+        </div>
+
+        <div class="item project child" id="pier1">
+            <div class='image-container'>
+                <div class="main-image" data-url="pier1.html"></div>
+            </div>
+            <div class="RobotoCondensed  fp-detail">
+                <p class='name'>PIER 1 MOBILE DESIGN</p>
+                <p class='category'>UX design</p>
+            </div>
+                               
+        </div>
+
+        <div class='item project child' id='ana'>
+            <div class='image-container'>
+                <div class='main-image' data-url="ana.html"></div>
+            </div>
+            <div class="RobotoCondensed fp-detail">
+                <p class='name'>ANA MOBILE REDESIGN</p>
+                <p class='category'>UX design</p>
+            </div>
+        </div>
+
+        <div class='item product child' id='whalefall'>
+            <div class="image-container">
+                <div class='main-image' data-url="whalefall.html"></div>
+            </div>
+            <div class="RobotoCondensed fp-detail">
+                <p class='name'>WHALE FALL: A DRAWING MACHINE</p>
+                <p class='category'>Creative coding</p>
+            </div>
+        </div>
+        </a>
+        <div id="contact" class="child thin-padding">
+            <div id="contact-title" class="RobotoCondensed">
+                <p>Find me</p>
+            </div>
+            <div id="contact-info">
+                <a href = "mailto: abc@example.com">luwenye2010@gmail.com</a>
+                <a href="https://www.linkedin.com/in/echo-lu-7bb990141/">LinkedIn</a>
+                <a href="https://github.com/xtcEcho">Github</p>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+    
+    <script>
+        ScrollReveal().reveal('.frontpage-h1', {duration: 2500})
+        ScrollReveal().reveal('.frontpage-h2', { delay: 1000, duration: 1500 })
+        ScrollReveal().reveal('.frontpage-p', { delay: 1500 , duration: 1500})
+        let slideUp = {
+            distance: '10%',
+            origin: 'bottom',
+            delay: 500,
+            duration: 700,
+            easing: 'ease',
+            opacity: 0,
+            reset: true,
+            // cleanup: true
+        };
+
+        ScrollReveal().reveal('.main-image', slideUp);
+        ScrollReveal().reveal('.banner', slideUp)
+        // ScrollReveal().reveal('.main-image', { cleanup: true });
+        // ScrollReveal().clean('.main-image', slideUp);
+    </script>
+</body>
+
+</html>
