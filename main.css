@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: titleFont;
-    src: url(../technique-sans.otf);
+    src: url('../technique-sans.otf');
 }
 
 body{
