@@ -168,7 +168,7 @@ h1.nav-link{
 }
 
 #threedweb .main-image{
-    background-image: url('/project-images/bookmark/front-page.png');
+    background-image: url('../project-images/bookmark/front-page.png');
 }
 
 #selfie .main-image{
